@@ -20,16 +20,19 @@ h3 {
   color: #333;
 }
 
-/* Form group styles */
-.form-group {
+
+/* App-specific form group */
+.app-form-group {
   margin-bottom: 15px;
 }
-.form-group label {
+
+.app-form-group label {
   display: block;
   font-weight: bold;
   margin-bottom: 5px;
 }
-.form-group input {
+
+.app-form-group input {
   width: 100%;
   padding: 8px;
   border: 1px solid #ccc;
@@ -37,15 +40,19 @@ h3 {
   background-color: #f7f7f7;
 }
 
+/* Row align for course navigation */
 .row-align {
   display: flex;
   align-items: center;
   gap: 10px;
+  flex-wrap: wrap;
 }
+
 .row-align input {
   width: 100px;
 }
 
+/* Navigation buttons inside row-align */
 .nav-buttons button {
   padding: 6px 10px;
   margin: 0 2px;
@@ -54,11 +61,12 @@ h3 {
   background-color: #007bff;
   color: white;
   border-radius: 4px;
+  font-size: 14px;
 }
+
 .nav-buttons button:hover {
   background-color: #0056b3;
 }
-
 /* Radio group */
 .radio-group {
   display: flex;
@@ -117,4 +125,83 @@ h3 {
 }
 .participants-table button:hover {
   background-color: #c82333;
+}
+
+/* Form container */
+.form-container {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+/* Form title */
+.form-container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Input groups */
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #555;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 8px 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.form-group input:read-only {
+  background-color: #f0f0f0;
+  cursor: not-allowed;
+}
+
+/* Buttons */
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.button-group button {
+  flex: 1;
+  padding: 10px;
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.ok-btn {
+  background-color: #28a745;
+  color: white;
+}
+
+.ok-btn:hover {
+  background-color: #218838;
+}
+
+.cancel-btn {
+  background-color: #6c757d;
+  color: white;
+}
+
+.cancel-btn:hover {
+  background-color: #5a6268;
 }

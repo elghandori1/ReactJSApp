@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import "../App.css";
 
 function Dashboard({courses,participants}) {
@@ -92,7 +93,7 @@ function Dashboard({courses,participants}) {
       <div className="participants-section">
         <div className="section-header">
           <h3>Participants</h3>
-          <button className="add-button">Nouveau participant</button>
+          <Link to={`/newparticipant/${participantList.length+1}/${currentCourse.id}`} className="add-button">Nouveau participant</Link>
         </div>
 
         <table className="participants-table">
